@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Button effect</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--    fontawesome 1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style type="text/css">
 
@@ -28,11 +30,31 @@
             border: none;
 
             cursor: pointer;
+
+            position: relative;
         }
 
         .btn::before{
             content: "";
-            font-family: "Font Awesome 5 Free",sans-serif;
+
+            width: 60px;
+            height: 100%;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .download-btn::before{
+            content: "\f019";
+            font-family: "Font Awesome 5 Free", sans-serif;
+            background-color: orange;
+
+            font-size: 150%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
     </style>

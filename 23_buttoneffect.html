@@ -6,13 +6,95 @@
 
 <!--    fontawesome 1-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type="text/css">
+
+        body{
+            font-family: sans-serif;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a{
+            width: 200px;
+            text-decoration: none;
+
+            background-color: green;
+            color: #ffffff;
+
+            font-size: 24px;
+            text-align: center;
+
+            padding: 30px 0;
+
+            position: relative;
+        }
+
+        /*a::before{*/
+        /*    content: "Hover Me smile";*/
+
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*    background-color: green;*/
+        /*    color: #ffffff;*/
+
+        /*    position: absolute;*/
+        /*    left: 0;*/
+        /*    top: 0;*/
+
+        /*    display: flex;*/
+        /*    justify-content: center;*/
+        /*    align-items: center;*/
+
+        /*    opacity: 0;*/
+
+        /*    transition: opacity 1s;*/
+        /*}*/
+
+        /*a:hover::before{*/
+        /*    opacity: 1;*/
+        /*}*/
+
+        a span{
+            position: relative;
+
+            transition: padding-right 1s;
+        }
+
+        a span::after{
+            content: "\f118";
+            font-family: "Font Awesome 5 Free", sans-serif;
+
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        a:hover span::after{
+            opacity: 1;
+        }
+
+        a:hover span{
+             padding-right: 30px;
+        }
+
+
+
+    </style>
+
 </head>
 <body>
 
-<div>
-    <a href="#">Hover Me</a>
-    <button type="button">Hover Me</button>
-</div>
+
+<a href="#">Hover Me<span></span></a>
+<!--    <button type="button">Hover Me</button>-->
+
 
 </body>
 </html>
