@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transform with rotate</title>
+    <style>
+        .container {
+            width: 1000px;
+            background-color: gray;
+        }
+
+        .move {
+            width: 150px;
+            height: 50px;
+            color: white;
+            font-size: 20px;
+            margin: 20px 0;
+            background-color: skyblue;
+
+            text-align: center;
+            line-height: 50px;
+
+            transition: all 5s;
+        }
+
+        #rotate:hover {
+            /*transform: rotate(angle)*/
+            /*transform: rotate(45deg);*/
+            /*transform: rotate(-45deg);*/
+            /*transform: rotate(90deg);*/
+            transform: rotate(360deg);
+        }
+
+        #rotate-x:hover {
+            /*transform: rotateX(angle-X)*/
+            /*transform: rotateX(45deg);*/
+            /*transform: rotateX(-45deg);*/
+            transform: rotateX(90deg);
+        }
+
+        #rotate-y:hover {
+            /*transform: rotateY(angle-Y)*/
+            /*transform: rotateY(45deg);*/
+            /*transform: rotateY(-45deg);*/
+            transform: rotateY(90deg);
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+
+            margin: auto;
+
+            display: block;
+
+            transition: all 3s;
+        }
+
+        img:hover {
+            /*transform: rotate(45deg);*/
+            /*transform: rotate(-45deg);*/
+            /*transform: rotate(360deg);*/
+
+        /* 1 turn = 360 deg   */
+        /*    transform: rotate(1turn);*/
+        /*    transform: rotate(0.5turn);*/
+        /*    transform: rotate(-0.5turn);*/
+        /*    transform: rotateX(1.5turn);*/
+
+        /* 400grad   */
+        /*    transform: rotate(400grad);*/
+        /*    transform: rotate(200grad);*/
+        /*    transform: rotateY(200grad);*/
+            transform: rotateY(-400grad);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="rotate" class="move">Rotate me</div>
+</div>
+
+<div class="container">
+    <div id="rotate-x" class="move">Rotate X</div>
+</div>
+
+<div class="container">
+    <div id="rotate-y" class="move">Rotate Y</div>
+</div>
+
+<hr>
+
+<img src="./imgs/dog.jpg" alt="dog.jpg">
+
+</body>
+</html>
+
+<!--
+rotate(x,y)
+rotateX(x)
+rotateY(y)-->

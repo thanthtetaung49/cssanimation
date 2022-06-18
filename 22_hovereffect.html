@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover effect</title>
+
+    <style type="text/css">
+
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a{
+            color: #ffffff;
+            text-decoration: none;
+
+            display: block;
+            font-size: 40px;
+            border: 5px solid #000000;
+
+            padding: 40px 80px;
+            margin: 20px 0;
+
+            position: relative;
+        }
+
+        a::before{
+            content: "";
+
+            width: 100%;
+            height: 100%;
+            background-color: #444444;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            z-index: -1;
+        }
+
+        button{
+            background-color: transparent;
+
+            font-size: 40px;
+            border: 5px solid #000000;
+            padding: 40px 80px;
+
+            position: relative;
+        }
+
+        button::before{
+            content: "Thank You";
+            width: 100%;
+            height: 100%;
+
+            background-color: #444;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <a href="#">Hover Me</a>
+    <button type="button">Hover Me</button>
+</div>
+
+</body>
+</html>

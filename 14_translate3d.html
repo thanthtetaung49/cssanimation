@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translate in #D</title>
+
+    <style type="text/css">
+
+        body {
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            perspective: 500px;
+        }
+
+        img{
+            width: 300px;
+            transition: transform 1s;
+        }
+
+        img:hover{
+            /*transform: rotate(45deg);*/
+            /*transform: rotateX(45deg);*/
+            /*transform: rotateX(90deg);*/
+            /*transform: rotateX(180deg);*/
+            transform: rotateX(360deg);
+            /*transform: rotateX(120deg);*/
+            /*transform: rotateX(-120deg);*/
+
+            /*transform: rotateY(45deg);*/
+            /*transform: rotateY(90deg);*/
+            /*transform: rotateY(180deg);*/
+            /*transform: rotateY(360deg);*/
+            /*transform: rotateY(120deg);*/
+            /*transform: rotateY(-120deg);*/
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="./imgs/dog.jpg" alt="dog.jpg" />
+</div>
+
+</body>
+</html>

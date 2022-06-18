@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform with Translate</title>
+    <style type="text/css">
+
+        .container {
+            width: 1000px;
+            background-color: green;
+        }
+
+        .container .translate {
+            width: 100px;
+            height: 50px;
+
+            padding: 20px;
+            margin: 20px;
+
+            color: black;
+            background-color: aqua;
+
+            line-height: 50px;
+        }
+
+        #translate:hover {
+            /* translate(x) */
+
+            transform: translate(200px);
+            transform: translate(-100px);
+
+            transform: translate(200%);
+            transform: translate(-100%);
+        }
+
+        #translatex:hover{
+            /* translateX(x) */
+
+            transform: translateX(300px);
+            transform: translateX(-100px);
+        }
+
+        #translatey:hover{
+            /* translateY(y) */
+
+            transform: translateY(80px);
+            transform: translateY(-80px);
+        }
+
+        #translatexy:hover{
+            /* translateXY(x,y) */
+
+            transform: translate(100px,0);
+            transform: translate(0,100px);
+            transform: translate(0,-100px);
+
+            transform: translate(100%,0);
+
+            transform: translate(100px,100px);
+            transform: translate(-100px,100px);
+            transform: translate(100px,-100px);
+            transform: translate(-100px,-100px);
+        }
+
+        .dog img {
+            width: 300px;
+            height: auto;
+
+            display: block;
+
+            margin: auto;
+
+            transition: all 3s;
+        }
+
+        #dog:hover {
+            transform: translate(300px);
+            transform: translate(-300px);
+
+            transform: translateX(100%);
+
+            transform: translateY(100%);
+            transform: translateY(-100%);
+
+            transform: translate(100%,100%);
+            transform: translate(-300px,300px);
+            transform: translate(300px,-150px);
+            transform: translate(-100%,-50%);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="translate" id="translate">Translate Me</div>
+    </div>
+
+    <div class="container">
+        <div class="translate" id="translatex">Translate X</div>
+    </div>
+
+    <div class="container">
+        <div class="translate" id="translatey">Translate Y</div>
+    </div>
+
+    <div class="container">
+        <div class="translate" id="translatexy">Translate XY</div>
+    </div>
+
+    <hr>
+
+    <div class="dog">
+        <img id="dog" src="./imgs/dog.jpg" alt="dog.jpg">
+    </div>
+    
+</body>
+</html>

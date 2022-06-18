@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type="text/css">
+
+        body{
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn{
+            background-color: transparent;
+            color: #000000;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            padding: 25px 80px;
+            margin: 20px;
+
+            border: none;
+
+            cursor: pointer;
+        }
+
+        .btn::before{
+            content: "";
+            font-family: "Font Awesome 5 Free";
+        }
+
+    </style>
+
+</head>
+<body>
+
+<button type="button" class="btn download-btn">Download Now</button>
+<button type="button" class="btn upload-btn">Upload Now</button>
+
+</body>
+</html>

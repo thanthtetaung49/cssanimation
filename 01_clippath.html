@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clippath</title>
+
+    <style type="text/css">
+        
+        /* property + value = declaration */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+        }
+
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+            border-radius: 50%;
+        }
+
+        .triangle{
+            width: 0;
+            height: 0;
+
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid slateblue;
+        }
+
+        /* circle
+            ellipse
+            polygon */
+
+            .square-shape{
+                width: 100px;
+                height: 100px;
+
+                background-color: slateblue;
+
+                float: left;
+                margin-right: 20px;
+            }
+
+            .circle-shape{
+                width: 100px;
+                height: 100px;
+
+                background-color: slateblue;
+
+                /* border-radius: 50%; */
+                /* clip-path: circle(); */
+                clip-path: circle(50%);
+
+                float: left;
+
+                shape-outside: circle();
+                margin-right: 20px;
+            }
+
+            .ellipse-shape{
+                width: 100px;
+                height: 100px;
+                background-color: slateblue;
+
+                /* ellipse have width and height */
+                clip-path: ellipse(50% 70%);
+
+                float: left;
+
+                shape-outside: ellipse(50% 70%);
+                margin-right: 20px;
+            }
+
+            .polygon-shape{
+                width: 100px;
+                height: 100px;
+                background-color: steelblue;
+
+                clip-path: polygon(0% 0%, 25% 0, 50% 85%, 73% 0, 100% 0%, 72% 100%, 28% 99%);
+                shape-outside: polygon(0% 0%, 25% 0, 50% 85%, 73% 0, 100% 0%, 72% 100%, 28% 99%);
+
+                margin-right: 20px;
+
+                float: left;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="square">Square</div>
+
+    <hr>
+
+    <div class="circle">Circle</div>
+
+    <hr>
+
+    <div class="triangle">Triangle</div>
+
+    <hr>
+
+    <div>
+        <div class="square-shape">Square</div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste facere quas corrupti libero, sunt repellendus. Illo eos corrupti aut libero placeat voluptates minima! Dignissimos placeat similique cum repellat reprehenderit natus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur atque dolor accusantium accusamus fuga asperiores quas nemo minima facere porro non facilis, iusto autem voluptas, deserunt ad quidem eaque cupiditate.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In qui tenetur necessitatibus saepe aspernatur consequuntur provident aperiam, minus neque consectetur eveniet debitis iste soluta explicabo, repudiandae quod aliquid totam quibusdam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta numquam ratione autem consectetur ab deleniti assumenda reiciendis, facilis iusto, velit, voluptatem temporibus pariatur cum facere quo. Assumenda distinctio dolorem quidem!
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class="circle-shape">Circle</div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste facere quas corrupti libero, sunt repellendus. Illo eos corrupti aut libero placeat voluptates minima! Dignissimos placeat similique cum repellat reprehenderit natus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur atque dolor accusantium accusamus fuga asperiores quas nemo minima facere porro non facilis, iusto autem voluptas, deserunt ad quidem eaque cupiditate.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In qui tenetur necessitatibus saepe aspernatur consequuntur provident aperiam, minus neque consectetur eveniet debitis iste soluta explicabo, repudiandae quod aliquid totam quibusdam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta numquam ratione autem consectetur ab deleniti assumenda reiciendis, facilis iusto, velit, voluptatem temporibus pariatur cum facere quo. Assumenda distinctio dolorem quidem!
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class="ellipse-shape">Ellipse shape</div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste facere quas corrupti libero, sunt repellendus. Illo eos corrupti aut libero placeat voluptates minima! Dignissimos placeat similique cum repellat reprehenderit natus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur atque dolor accusantium accusamus fuga asperiores quas nemo minima facere porro non facilis, iusto autem voluptas, deserunt ad quidem eaque cupiditate.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. In qui tenetur necessitatibus saepe aspernatur consequuntur provident aperiam, minus neque consectetur eveniet debitis iste soluta explicabo, repudiandae quod aliquid totam quibusdam.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta numquam ratione autem consectetur ab deleniti assumenda reiciendis, facilis iusto, velit, voluptatem temporibus pariatur cum facere quo. Assumenda distinctio dolorem quidem!
+        </p>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class="polygon-shape"></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aliquam expedita, eligendi quaerat harum, ipsa ea itaque omnis enim dolorem asperiores voluptates accusantium. Et, quod neque. Nihil quo rem expedita!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam accusamus repudiandae id aliquam facere? Saepe, illo! Impedit obcaecati, dolorem aspernatur reprehenderit omnis molestiae ad sequi earum culpa! Optio, dolorum dolor.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, repellendus perferendis porro similique aperiam error delectus vel reiciendis quae dicta non laboriosam optio corrupti neque fugiat? Officia culpa atque alias.
+        </p>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>
