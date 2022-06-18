@@ -18,10 +18,36 @@
         .btn{
             width: 200px;
             height: 60px;
+
             font-size: 20px;
+            color: #ffffff;
+
+            background: linear-gradient(
+                60deg,
+                blue,
+                skyblue,
+                blue,
+                skyblue
+            );
+            background-size: 300%;
+
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+
             border-radius: 50px;
             border: none;
+
             cursor: pointer;
+
+            transition: background-position 1s ease-in-out;
+        }
+
+        .btn:hover{
+            background-position: right;
+        }
+
+        .btn:active{
+            box-shadow: 0 1px 15px rgba(0,0,0,0.4);
+            transform: translateY(4px);
         }
 
     </style>
