@@ -19,8 +19,10 @@
 
         .btn{
             background-color: transparent;
-            color: #000000;
+
+            color: #ffffff;
             font-weight: 700;
+            font-family: sans-serif;
             letter-spacing: 1px;
             text-transform: uppercase;
 
@@ -36,6 +38,7 @@
 
         .btn::before{
             content: "";
+            font-family: "Font Awesome 5 Free", sans-serif;
 
             width: 60px;
             height: 100%;
@@ -45,10 +48,23 @@
             top: 0;
         }
 
+        .download-btn{
+            background-color: #34a1eb;
+        }
+
+        .download-btn:hover{
+            background-color: #328bc7;
+        }
+
+        .download-btn:active{
+            background-color: #225373;
+        }
+
+
         .download-btn::before{
             content: "\f019";
-            font-family: "Font Awesome 5 Free", sans-serif;
-            background-color: orange;
+
+            background-color: #328bc7;
 
             font-size: 150%;
 
@@ -57,10 +73,22 @@
             align-items: center;
         }
 
+        .upload-btn{
+            background-color: #5117e6;
+        }
+
+        .upload-btn:hover{
+            background-color: #582fc2;
+        }
+
+        .upload-btn:active{
+            background-color: #4c328f;
+        }
+
         .upload-btn::before{
             content: "\f093";
-            font-family: "Font Awesome 5 Free", sans-serif;
-            background-color: orange;
+
+            background-color: #582fc2;
 
             font-size: 150%;
 
