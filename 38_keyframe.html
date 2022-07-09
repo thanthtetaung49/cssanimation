@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+
+    <style type="text/css">
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+
+            background-color: steelblue;
+
+            animation-name: myannimation;
+            animation-duration: 5s;
+        }
+
+        @keyframes myannimation {
+            
+            /* 0% {
+                transform: translate(0px) rotate(45deg);
+            }
+
+            50% {
+                transform: translate(500px) rotate(90deg);
+            }
+
+            100% {
+                transform: translate(1000px) rotate(180deg);
+            } */
+
+            0% {
+                transform: translate(0px);
+            }
+
+            50% {
+                transform: translate(500px);
+            }
+
+            100% {
+                transform: translate(500px, 500px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
+
+<!-- 9AM -->
