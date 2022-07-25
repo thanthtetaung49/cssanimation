@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyframe</title>
+    <style type="text/css">
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box1 {
+            width: 150px;
+            height: 150px;
+
+            background-color: steelblue;
+
+            /* animation-name: myannimation; */
+            animation-duration: 3s;
+
+            /*animation-fill-mode: backwards;*/
+            animation-fill-mode: forwards;
+
+            animation-delay: 3s;
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            
+            background-color: orange;
+
+            /* animation-name: myanimationtwo; */
+            animation-duration: 3s;
+
+            /* animation-fill-mode: backwards; */
+            animation-fill-mode: forwards;
+        }
+
+        .box3 {
+            width: 150px;
+            height: 150px;
+
+            background-color: violet;
+
+            position: relative;
+
+            animation-name: shakeannimation;
+            animation-duration: 3s;
+        }
+
+        @keyframes myannimation {
+
+            0% {
+                transform: translate(0px);
+            }
+
+            30% {
+                transform: translate(600px);
+            }
+
+            100% {
+                transform: translate(500px, 500px);
+            }
+        }
+
+        @keyframes myanimationtwo {
+            0% {
+                background-color: violet;
+                transform: translate(0px);
+            }
+
+            25% {
+                background-color: aqua;
+                transform: translate(300px, 0px);
+            }
+
+            50% {
+                background-color: black;
+                transform: translate(300px, 300px);
+            }
+
+            75% {
+                background-color: tomato;
+                transform: translate(0px, 300px);
+            }
+
+            100% {
+                background-color: rebeccapurple;
+                transform: translate(0px, 0px);
+            }
+        }
+
+        @keyframes shakeannimation {
+            /* 12.5% {
+                left: -100px;
+            }
+
+            25% {
+                left: 100px;
+            }
+
+            37.5% {
+                left: -50px;
+            }
+
+            50% {
+                left: 50px;
+            }
+
+            62.5% {
+                left: -25px;
+            }
+
+            70% {
+                left: 25px;
+            } */
+
+            12.5% {
+                top: -100px;
+            }
+
+            25% {
+                top: 100px;
+            }
+
+            37.5% {
+                top: -50px;
+            }
+
+            50% {
+                top: 50px;
+            }
+
+            62.5% {
+                top: -25px;
+            }
+
+            75% {
+                top: 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="box1"></div>
+
+<hr>
+
+<div class="box2"></div>
+
+<hr>
+
+<div class="box3"></div>
+
+</body>
+</html>

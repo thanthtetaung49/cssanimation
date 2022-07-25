@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+
+    <style type="text/css">
+
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            width: 150px;
+            height: 150px;
+
+            background-color: steelblue;
+
+            /* animation-name: myanni;
+            animation-duration: 5s;
+            animation-fill-mode: forwards; */
+
+            /* animation-iteration-count: 3; */
+            /* animation-iteration-count: infinite; */
+
+            animation-timing-function: ease;
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: linear; */
+
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+
+            /* Short Hand  */
+
+                    /* name duration iteration-count timing-function direction  */
+            animation: myanni 3s infinite ease-in-out alternate;
+
+        }
+
+        @keyframes myanni {
+
+            0% {
+                transform: translate(0px);
+            }
+
+            50% {
+                transform: translate(500px);
+            }
+
+            100% {
+                transform: translate(500px, 500px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+    
+</body>
+</html>
